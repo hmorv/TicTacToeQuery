@@ -1,0 +1,68 @@
+*{}
+.jumbotron{
+	width:1%;
+	opacity: .1;
+}
+a:link {
+	text-decoration: none;
+}
+.taulell, .controls{
+	border:2px solid black;
+	border-radius: 5px;
+}
+.taulell{
+	background-color: CadetBlue;
+}
+.controls{
+	background-color: CornflowerBlue;
+	height:auto;
+}
+.graella{
+	background-color:#EEE;
+	width:99%;
+	border-radius:5px;
+	width:99%;
+	height:auto;
+}
+.fila{
+	width:70%;
+	margin:0 auto;
+	/*display:block;
+	float:left;*/
+
+	/*position:relative;*/
+}
+/* generem un marge inferior, però no funciona...*/
+.fila:last-child{
+	padding-bottom: 1em;
+}
+/*.fila:before{
+content:"";
+    display:block;
+    padding-top:100%;	
+}*/
+.casella{
+	/*position: absolute;*/
+	width:33%;
+	/*height:200px;*/
+	background-color: #111;
+	border:2px solid red;
+	display:inline;
+	float:left;
+	color:red;
+}
+/* Això permet construir les caselles responsive, és un petit 'truc' */
+.casella:before{
+    content:"";
+    display:block;
+    padding-top:100%;
+}
+
+
+#info {
+	cursor:help;
+}
+
+/* missatges */
+.fi {color:red;}
+.error{color:red;}
