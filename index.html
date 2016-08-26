@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<!-- meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8"/>
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- Carregam Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jQuery UI -->	
+	<link rel="stylesheet" type="text/css" href="jqui/jquery-ui.min.css">
+	<!--<script type="text/javascript" src="jqui/external/jquery.js"></script>-->
+	<script type="text/javascript" src="jqui/jquery-ui.min.js"></script>
+	<!-- js i css propis -->	
+	<script type="text/javascript" src="js/logica.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estils.css">
+	<!--<link rel="stylesheet" type="text/css" href="jqui/jquery-ui.min.css">-->
+	<title>Tres en Ratlla amb jQuery UI!</title>
+</head>
+<body>
+	<div class="container-fluid envoltori">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<header>
+					<div class="jumbotron text-center">
+						<h1>Tres en Ratlla amb jQuery UI! <br/><small>by <a href="http://www.palmacodi.net">PalmaCodi</a></small></h1>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div class="row text-center taulell">
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<section>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 graella">
+						<h2>Taulell</h2>
+						<div class="fila">
+							<div class="casella" id="0,0"></div>
+							<div class="casella" id="0,1"></div>
+							<div class="casella" id="0,2"></div>
+						</div>
+
+						<div class="fila">
+							<div class="casella" id="1,0"></div>
+							<div class="casella" id="1,1"></div>
+							<div class="casella" id="1,2"></div>
+						</div>
+
+						<div class="fila">
+							<div class="casella" id="2,0"></div>
+							<div class="casella" id="2,1"></div>
+							<div class="casella" id="2,2"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 controls">
+				<aside>
+					<h2>Controls del Joc</h2>
+					<!--<form role="form">-->
+						<div class="form-group">
+						<label for="inputJugador1">Nom Jugador 1</label>
+							<input id="inputJugador1" class="form-control"/>
+						</div>
+						<label for="inputJugador2">Nom Jugador 2</label>
+						<div class="form-group">
+							<input id="inputJugador2" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<button id="iniciarJoc" class="btn btn-default">Començar!</button>
+						</div>
+						<div id="missatge"></div>
+					<!--</form>-->
+					<div id="dialog" title="Informació">
+						<p>Aquest joc és molt conegut, normalment es pot considerar com el "Hola món" dels videojocs.</p>
+						<p>Des de <a href="http://www.palmacodi.net">PalmaCodi</a> esperam vos agradi aquesta implementació!</p>
+						<p>Per cert, aquest 'popup' el podeu moure i canviar les seves dimensions, gràcies a <a href="http://jqueryui.com/">jQuery UI.</a></p>
+					</div>
+					<button class=".btn btn-default" id="info">Informació</button>
+					<div id=""></div>
+				</aside>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<footer>
+					<h6><a href="http://www.palmacodi.net">PalmaCodi - 2015 Hugo Moragues Valencia</a></h6>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
